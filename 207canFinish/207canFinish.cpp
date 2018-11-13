@@ -68,15 +68,12 @@ public:
 };
 
 int main() {
-	int numCourses = 8;
+	int numCourses = 4;
 	vector<pair<int, int>> prerequisites;
 	prerequisites.push_back(make_pair(1, 0));
-	prerequisites.push_back(make_pair(2, 6));
-	prerequisites.push_back(make_pair(1, 7));
-	prerequisites.push_back(make_pair(5, 1));
-	prerequisites.push_back(make_pair(6, 4));
-	prerequisites.push_back(make_pair(7, 0));
-	prerequisites.push_back(make_pair(0, 5));
+	prerequisites.push_back(make_pair(2, 0));
+	prerequisites.push_back(make_pair(3, 1));
+	prerequisites.push_back(make_pair(3, 2));
 
 	bool res = Solution().canFinish(numCourses, prerequisites);
 	if (res)
